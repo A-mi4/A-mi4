@@ -23,7 +23,7 @@ inner_loop:
     lw $t4, 0($a1)
     lw $t5, 4($a1)
 
-    ble $t4, $t5, skip
+    bge $t4, $t5, skip
 
     sw $t5, 0($a1)
     sw $t4, 4($a1)
